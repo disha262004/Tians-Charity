@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f99115;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.header .contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.header .contact-info div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.header i {
+    font-size: 30px;
+    margin-right: 10px; 
+}
+.header .email div{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.header .phone-no div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header .email div span:first-child,
+.header .phone-no div span:first-child {
+    font-weight: bold;
+}
+
+.header .search-bar,
+.header .menu {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.header .search-bar {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;  /* Add space between search bar and menu */
+}
+
+.header .menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+
+.head-info {
+    position: sticky;
+    
+    top: 0;
+    z-index: 1000;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.head-info .logo {
+    margin-left: 50px;
+    height: 100px;
+    padding: 15px 30px;
+    width: 200px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.head-details {
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.head-details div {
+    margin: 0 15px;
+}
+
+.head-details a {
+    text-decoration: none;
+    color: #011d49;
+    font-weight: 300;
+}
+
+.head-details a:hover {
+    color: #f99115;
+}
+
+.donation {
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    width: 270px;
+}
+
+.donation a {
+    background-color: #f99115;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Heading section styles */
+.heading {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(249, 192, 143);
+}
+
+.heading h1 {
+    color: #011d49;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.heading a {
+    text-decoration: none;
+    color: #011d49;
+    font-size: 1.2rem;
+}
+
+/* Content section styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 600px; /* Adjusted to min-height for better layout */
+    background-color: white;
+    padding: 50px 20px; /* Added padding to maintain spacing */
+}
+
+.content .our_service {
+    color: #f99115;
+    font-weight: 500;
+}
+
+.content-head {
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content-head h1 {
+    color: #011d49;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content-head p {
+    color: #011d49;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/* Content sections styles */
+.content-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-sections div {
+    background-color: white;
+    padding: 30px;
+    text-align: left;
+    border-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-sections div:hover {
+    border-color: #f99115;
+}
+
+.sec1 i,
+.sec2 i,
+.sec3 i,
+.sec4 i,
+.sec5 i,
+.sec6 i {
+    color: #f99115;
+    font-size: 2rem;
+}
+
+.sec1 h3,
+.sec2 h3,
+.sec3 h3,
+.sec4 h3,
+.sec5 h3,
+.sec6 h3 {
+    color: #011d49;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.sec1 p,
+.sec2 p,
+.sec3 p,
+.sec4 p,
+.sec5 p,
+.sec6 p {
+    color: #011d49;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.sec1 a,
+.sec2 a,
+.sec3 a,
+.sec4 a,
+.sec5 a,
+.sec6 a {
+    display: inline-block;
+    color: #f99115;
+    padding: 10px 0px;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* Footer section styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: #011d49;
+    padding: 50px;
+    margin-top: 20px; /* Adjusted margin-top for symmetry */
+}
+
+.footer-sec1,
+.footer-sec2,
+.footer-sec3,
+.footer-sec4 {
+    flex: 1;
+    margin-left: 150px;
+}
+
+.footer h3 {
+    color: #011d49;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer ul li:before {
+    content: "\2192";
+    margin-right: 10px;
+    color: #f99115;
+}
+
+.footer a {
+    color: #011d49;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #f99115;
+}
+
+.footer-sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-sec3 img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.footer-sec1 hr,
+.footer-sec2 hr,
+.footer-sec3 hr,
+.footer-sec4 hr{
+    color:black;
+    margin-bottom: 20px;
+}
